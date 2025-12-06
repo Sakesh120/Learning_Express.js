@@ -1,16 +1,20 @@
 import express from "express";
-import formData from "./pages/login.js";
+import abpath from "./absolutePath.js";
+
 const app = express();
-
+const absPath = abpath();
+console.log(absPath);
 app.get("/", (req, res) => {
-  res.send("<h1>Hello</h1> <a href='/login'>Go to login</a>");
+  res.sendFile(absPath + "/home.html");
 });
-
 app.get("/login", (req, res) => {
-  res.send(formData());
+  res.sendFile(absPath + "/login.html");
+});
+app.get("/about", (req, res) => {
+  res.sendFile(absPath + "/about.html");
+});
+app.use((req, res) => {
+  res.status(404).sendFile(absPath + "/404.html");
 });
 
-app.post("/submit", (req, res) => {
-  res.send("<h1>submitted</h1> <a href='/'>back to home </a>");
-});
 app.listen(3500);
