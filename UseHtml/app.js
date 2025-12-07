@@ -1,9 +1,12 @@
 import express from "express";
 import abpath from "./absolutePath.js";
+import path from "path";
 
 const app = express();
 const absPath = abpath();
-console.log(absPath);
+const absPublic = path.resolve("public");
+app.use(express.static(absPublic));
+
 app.get("/", (req, res) => {
   res.sendFile(absPath + "/home.html");
 });
@@ -18,3 +21,5 @@ app.use((req, res) => {
 });
 
 app.listen(3500);
+
+console.log();
