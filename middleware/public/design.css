@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  border: 2px soid gray;
+  box-shadow: 1px 1px 0px rgb(143, 138, 138);
+
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px;
+  gap: 15px;
+}
+button {
+  background: #665f5f;
+  color: aqua;
+}
