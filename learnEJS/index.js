@@ -1,8 +1,9 @@
 import express from "express";
 const app = express();
 
+app.set("view engine", "ejs");
 app.get("/", (req, res) => {
-  res.send("first page");
+  res.render("home", { name: "sakesh", adress: "India" });
 });
 app.get("/next", (req, res) => {
   res.send("next page");
