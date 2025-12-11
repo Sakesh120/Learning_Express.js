@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User hai</title>
+</head>
+
+<body>
+  <h1>User Hai kya bhai</h1>
+  <ul>
+
+
+    <!-- <% for(let i=0; i<user.length ; i++ ){ %>
+      <li>
+        <%= user[i] %>
+      </li>
+      <% }%> -->
+
+    <% user.map((e,i)=>{%>
+      <li style="list-style: none;" key={i}>
+        <%= e %>
+      </li>
+      <% })%>
+
+
+        <% if(isUserLogin){%>
+          <h2>New User is Logged in</h2>
+          <% }else{%>
+            <h2>Abhi User nahi aaya re..</h2>
+            <% } %>
+
+              <a href='/login'>add more...</a>
+  </ul>
+
+</body>
+
+</html>
