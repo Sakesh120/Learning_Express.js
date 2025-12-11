@@ -1,0 +1,32 @@
+[
+  {
+    "id":1,
+    "name":"Anil",
+    "age":30,
+    "email":"sac@op.com"
+  },
+  {
+    "id":2,
+    "name":"sac",
+    "age":10,
+    "email":"sac@op.com"
+  },
+  {
+    "id":3,
+    "name":"ram",
+    "age":25,
+    "email":"sak@op.com"
+  },
+  {
+    "id":4,
+    "name":"krish",
+    "age":34,
+    "email":"skk@op.com"
+  },
+  {
+    "id":5,
+    "name":"amit",
+    "age":30,
+    "email":"sac@op.com"
+  }
+]
